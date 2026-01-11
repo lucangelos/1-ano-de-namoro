@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <title>1º ano de Namoro</title>
+</head>
+<body>
+    <section class="hero fade">
+        <div>
+            <h1>
+                💕FELIZ 1 ANO JUNTOS MEU AMOR💕
+                <br>
+                Um ano ao seu lado
+                <br>
+                e é apenas o começo
+            </h1>
+            <br>
+            <div class="date">18/01/2025 - ♾️</div>
+            
+            <div class="scroll-hint">
+                    Desliza com carinho
+                    <span>↓</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="fade">
+        <h2>Tudo foi feito para você</h2>
+        <p>
+            Construí esse site para mostrar um pouco de como foi o nosso primeiro ano e o meu amor que sinto por você todos os dias.   
+        </p>
+    </section>
+
+    <section class="fade">
+        <h2>Nossos momentos</h2>
+        <div class="gallery">
+            <img src="img/BeijoFormatura.jpeg" alt="Beijando n a formatura">
+            <img src="img/Buque.jpeg" alt="Ela segurando um buquê">
+            <img src="img/BeijoBochecha.jpeg" alt="Beijando a bochecha dela">
+            <img src="img/NosTres.jpeg" alt="Nós & Liz" class="gallery_secundario">
+        </div>
+    </section>
+
+    <section id="carta" class="fade">
+        <h2>Bruna,</h2>
+        <p>
+            você é quem me alegra nos momentos de alegria e de tristeza, quem se preocupa comigo e com a família de forma que nunca vi!
+            <br>
+            Eu sou grato por cada momento ao seu lado, por todas os carinhos, beijos, risadas, dias que ficamos cansados, porém, juntos.
+            <br>
+            Eu quero te dizer que eu quero ter você para o resto da minha vida, e aqui firmo um compromisso de um dia nos casarmos e construírmos uma família tendo Jesus como base de todo o nosso relacionamento!
+            <br>
+            <strong>EU TE AMO BRUNA 💕</strong>
+        </p>    
+        
+    </section>
+    <section class="fade">
+        <div class="gallery">
+            <img src="img/MeuAniversario.jpeg" alt="Foto tirada no meu aniversário">
+            <img src="img/EBF.jpeg" alt="A mulher mais perfeita da EBF">
+            <img src="img/Filtro.jpeg" alt="Foto com filtro">
+            <img src="img/Lindona.jpeg" alt="Perfeita" class="gallery_secundario">
+        </div>
+    </section>
+
+    <section class="fade">
+        <h2>NÓS DOIS</h2>
+        <p>
+            Crescemos juntos durante esse 1 ano, amadurecemos bastante, porém, isso é apenas o começo de uma grande histórias que estamos a construir juntos.
+        </p>
+        <p>
+            Eu quero ser o seu companheiro, melhor amigo, ajudante, auxiliador e tudo que que você precisar! <br>(menos lavar a louça kkkk)
+        </p>
+        <p>
+            Enfim minha princesa, saiba que eu estarei aqui para sempre, apesar dos meus erros constantes, mas eu estou aqui para crescer ao seu lado e evoluir todos os dias para que possamos ser melhores um para o outro.
+        </p>
+    </section>
+    <section class="fade">
+        <div class="gallery">
+            <img src="img/Jeronimo.jpeg" alt="Jeronimo">
+            <img src="img/Pedido.jpeg" alt="Nós na sala de TV">
+            <img src="img/Ela&Aline.jpeg" alt="Ela toda perfeita" class="gallery_secundario">
+            <img src="img/EnsaioFormatura.jpeg" alt="Ensaio da formatura">
+        </div>
+    </section>
+    <section class="fade">
+        <p>Lembro como se fosse ontem, nós "apenas saindo" como amigos junto da Amanda, e do nada</p>
+        <p><b>💥BOOM💥</b></p>
+        <p>Foi pedida em namoro.</p>
+        <p>E que bom que você disse "sim", não sei o que seria de mim se não fosse você comigo neste ano sendo a minha maior companhia.</p>
+        <p>Eu te amo meu amor, eu te amo tanto, mais tanto que não consigo nem achar palavras para descrever os meus sentimentos por você, mas espero que você consiga entender o meu amor por você.</p>
+    </section>
+    <footer class="fade">
+        Será sempre você.
+        <br> <br>
+        Com amor, 
+        <br>
+        <strong>Lucas</strong>
+    </footer>
+
+    <script>
+        const elements = document.querySelectorAll('.fade');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        elements.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
